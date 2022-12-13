@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of DOM</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome To My DOM</h1>
+    </header>
+    <main>
+      <section>
+        <h1>My Awesome DOM de baba</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, 
+         adipisicing elit. Neque quo mollitia minima? 
+         Quisquam dolorum nobis magnam, est sequi ipsum 
+         facere ipsam sint nesciunt eos recusandae aliquid, 
+         aut hic voluptatem esse!</p>
+        <ul>
+            <li>Jalali Set</li>
+            <li>Shafayet</li>
+            <li>bonobash</li>
+        </ul>
+      </section>
+        <section>
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">Please I like to visit</h1>
+            <ul>
+                <li class="important-places">Soondarban</li>
+                <li class="important-places">Bandorban</li>
+                <li class="important-places">Salban</li>
+                <li>kataban</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+         const liCollactions = document.getElementsByTagName("li")
+            for(const li of liCollactions){
+                // console.log(li.innerText)
+            }
+         
+        const alHeadings = document.getElementsByTagName('h1')
+        for(const h1 of alHeadings){
+            // console.log(h1.innerText);
+        }
+
+        const fruitsTitle = document.getElementById("fruits-title");
+        fruitsTitle.innerText = 'Fruits change by JS'
+
+        const places = document.getElementsByClassName('important-places')
+        for(const place of places){
+            console.log(place.innerText);
+        }
+    </script>
+ <script src="js/dom.js"></script>
+</body>
+</html>
