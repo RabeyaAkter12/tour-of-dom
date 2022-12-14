@@ -35,7 +35,7 @@
         </section>
         <section>
             <h1 id="places-title">Please I like to visit</h1>
-            <ul>
+            <ul id="visit-id">
                 <li class="important-places">Soondarban</li>
                 <li class="important-places">Bandorban</li>
                 <li class="important-places">Salban</li>
@@ -44,22 +44,41 @@
         </section>
     </main>
     <script>
+        // Option-1
          const liCollactions = document.getElementsByTagName("li")
             for(const li of liCollactions){
                 // console.log(li.innerText)
             }
          
+            const div =document.getElementById("places-title");
+            const text = div.innerText;
+            console.log(text);
+         
+            const div2 =document.getElementById("visit-id").style.backgroundColor = "red";
+            const html = div2.innerHTML;
+            console.log(html);
+
+            // Option-2
         const alHeadings = document.getElementsByTagName('h1')
         for(const h1 of alHeadings){
             // console.log(h1.innerText);
         }
 
+        // Option-3
         const fruitsTitle = document.getElementById("fruits-title");
         fruitsTitle.innerText = 'Fruits change by JS'
 
         const places = document.getElementsByClassName('important-places')
         for(const place of places){
-            console.log(place.innerText);
+            // console.log(place.innerText);
+        }
+
+        // querySelector: Option-4
+        // querySelectorAll: Option-5
+        const someLi = document.querySelectorAll("important-places");
+        console.log(someLi);
+        for(const li of someLi){
+            console.log(li.innerText)
         }
     </script>
  <script src="js/dom.js"></script>
