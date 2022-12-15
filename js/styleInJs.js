@@ -12,5 +12,5 @@ for( const section of sections){
 // placesContainer.style.backgroundColor = "gray";
 
 const placesContainer = document.getElementById('places-container');
-placesContainer.classList.add('text-center')
-placesContainer.classList.remove('large-text')
+placesContainer.classList.add('text-center');
+placesContainer.classList.remove('large-text');
