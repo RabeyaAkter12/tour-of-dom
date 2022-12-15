@@ -5,9 +5,15 @@ h1{
     color: black;
 }
 .important-places{
-color: rgb(57, 231, 165);
+color: rgb(29, 120, 173);
 }
 li{
-    color: rgb(234, 127, 255);
+    color: rgb(244, 82, 203);
 
+}
+.large-text{
+    font-size: 2em;
+}
+.text-center{
+    text-align: center;
 }
